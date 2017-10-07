@@ -8,10 +8,23 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
     "babel-preset-env": "^1.6.0",
-    "nodemon": "^1.12.1"
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "^7.4.0",
+    "nodemon": "^1.12.1",
+    "prettier": "^1.7.4"
   },
   "dependencies": {
-    "express": "^4.16.1"
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "jsonwebtoken": "^8.0.1",
+    "mongoose": "^4.12.0"
   }
 }
