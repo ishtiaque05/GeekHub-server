@@ -19,6 +19,7 @@ router.post('/',(req, res)=> {
       res.json({ user: userRecord.toAuthJSON() })
     })
     .catch(err => res.status(400).json({ errors: parseErrors(err.errors) }));
-})
+});
+
 
 export default router;
