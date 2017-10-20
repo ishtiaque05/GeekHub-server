@@ -13,7 +13,7 @@ function setup(){
   });
 }
 
-export function sendConfirmationEmail(user){
+export function sendConfirmationEmail(user) {
   const transport = setup();
   const email = {
     from,
@@ -24,6 +24,20 @@ export function sendConfirmationEmail(user){
       ${user.generateConfirmationUrl()}
     `
   };
+  transport.sendMail(email);
+}
 
+export function sendResetPasswordEmail(user) {
+  const transport = setup();
+  const email = {
+    from,
+    to: user.email,
+    subject: "Reset Password",
+    text: `
+      To reset password follow this link.
+
+      ${user.generateResetPasswordLink()}
+    `
+  };
   transport.sendMail(email);
 }
